@@ -1,0 +1,81 @@
+body {
+  font-family: Times, serif;
+  color: white;
+  background-color: black;
+}
+.active {
+  color: white;
+}
+.inn {
+  color: white;
+}
+.iphone {
+  color: white;
+}
+.phone {
+  height: 300px;
+  width: 250px;
+}
+.phone2 {
+  height: 300px;
+  width: 250px;
+}
+img {
+  height: 600px;
+  width: 300px;
+}
+
+.apple {
+  text-align: center;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13%;
+}
+.img2 {
+  height: 130px;
+  width: 130px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.container {
+  max-width: 90rem;
+  margin: 2rem auto;
+  padding: 0px 2rem;
+}
+.header {
+  padding: 2rem;
+  margin: 1rem 0px;
+  text-align: center;
+}
+
+header > .title {
+  margin-bottom: 1rem;
+}
+
+.bio {
+  margin: 2rem auto;
+  padding: 0px 0.5rem;
+  max-width: 40rem;
+}
+
+.bio > h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.bio > p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.bio > hr {
+  margin-top: 2rem;
+}
