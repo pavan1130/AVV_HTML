@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button {
+      height: 100px;
+      width: 250px;
+      background-color: rgb(100, 84, 84);
+    }
+    h1 {
+      background-color: blanchedalmond;
+    }
+    img {
+      height: 300px;
+      width: 400px;
+    }
+  </style>
+  <body>
+    <h1>Show the date and time</h1>
+    <button onclick="displayDate()">click me</button>
+
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+
+    <p id="demo"></p>
+    <img
+      src="https://www.freecodecamp.org/news/content/images/2022/09/kevin-ku-aiyBwbrWWlo-unsplash.jpg"
+      alt=""
+    />
+  </body>
+</html>
