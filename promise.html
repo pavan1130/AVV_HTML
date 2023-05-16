@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    h2 {
+      text-align: center;
+      color: rgb(165, 193, 215);
+    }
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    h3 {
+      text-align: center;
+      color: rgb(192, 173, 173);
+    }
+    img {
+      height: 350px;
+      width: 350px;
+      position: absolute;
+      left: 25%;
+    }
+  </style>
+  <body>
+    <h2>Java Script Promise concept</h2>
+
+    <h3>please Wait for a Few seconds ! Something special for YOU</h3>
+    <br /><br /><br /><br /><br />
+    <h1 id="demo"></h1>
+    <img
+      src="https://quotesmoon.com/wp-content/uploads/2023/03/New-Good-Morning-Images-Quotesmoon-74.jpg"
+      alt=""
+    />
+    <script>
+      const myPromise = new Promise(function (myResolve, myReject) {
+        setTimeout(function () {
+          myResolve("Good Morning !! ");
+        }, 3000);
+      });
+
+      myPromise.then(function (value) {
+        document.getElementById("demo").innerHTML = value;
+      });
+    </script>
+  </body>
+</html>

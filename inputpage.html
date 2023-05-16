@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(4, 46, 62);
+      color: aliceblue;
+      text-align: center;
+    }
+    div {
+      background-color: #100807;
+      width: 120px;
+      height: 20px;
+      padding: 40px;
+    }
+  </style>
+  <body>
+    user name : <input id="input" /> <br /><br />
+    age: <input type="number" id="num" /> <br /><br />
+    <button onclick="myFunction()">submit</button>
+    <h1 id="msg"></h1>
+    <h1 id="msg1"></h1>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)">mouse</div>
+
+    <script>
+      function myFunction() {
+        let input = document.querySelector("#input");
+        let msg = document.querySelector("#msg");
+        let input1 = document.querySelector("#num");
+        let msg1 = document.querySelector("#msg1");
+        msg.innerHTML = "name  : " + input.value;
+        msg1.innerHTML = "age  : " + input1.value;
+      }
+
+      function mOver(obj) {
+        obj.innerHTML = "Thank You";
+      }
+
+      function mOut(obj) {
+        obj.innerHTML = "mouse";
+      }
+    </script>
+  </body>
+</html>
